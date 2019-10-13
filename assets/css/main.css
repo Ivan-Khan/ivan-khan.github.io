@@ -704,6 +704,18 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.headshot {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+			.image.headshot img {
+				display: inline-block;
+				border-radius: 50%;
+				width: 100%;
+				vertical-align: middle;
+			}
+
 		@media screen and (max-width: 736px) {
 
 			.image.main {
@@ -1288,8 +1300,8 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
+			width: 16.5rem;
+			height: 16.5rem;
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
@@ -1433,11 +1445,14 @@ input, select, textarea {
 			}
 
 				#header > *:before {
+					display: none;
 					top: calc(-2rem - 1px);
 					height: calc(2rem + 1px);
 				}
 
+
 			#header .logo {
+				display: none;
 				width: 4.75rem;
 				height: 4.75rem;
 				line-height: 4.75rem;
